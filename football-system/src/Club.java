@@ -1,10 +1,10 @@
 public class Club {
     private String name;
-    private int capacity;
-    private int height;
+    private int capacity;    // capacity về cái gì?
+    private int height;      // height gì?
     private String location;
-    private String playerList[];
-    private double foundedYear;
+    private String playerList[];    // => private Player[] playerList;
+    private double foundedYear;     //=> year là int
     //n players, 1 manager, 1 stadium
 
     //Characteristics of a club
