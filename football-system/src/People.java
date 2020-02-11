@@ -15,9 +15,7 @@ public class People {
         this.name = name;
         
         //this.age = age;       // phải kiểm soát, lỡ ai đấy input data vô age = 10000 là tiêu, phải đặt điều kiện (16 -> 80), bằng hàm Setter
-        if(age<80&&age>18) {
-            this.age = age;
-        }
+        this.age = this.setAge(age);
         
         this.height = height; // tương tự, cần có 1 range
         this.weight = weight;   // tương tự, cần có 1 range
