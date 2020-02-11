@@ -13,7 +13,12 @@ public class People {
 
     public People(String name, int age, int height, int weight, String nationality, int experience) {
         this.name = name;
-        this.age = age;       // phải kiểm soát, lỡ ai đấy input data vô age = 10000 là tiêu, phải đặt điều kiện (16 -> 80), bằng hàm Setter
+        
+        //this.age = age;       // phải kiểm soát, lỡ ai đấy input data vô age = 10000 là tiêu, phải đặt điều kiện (16 -> 80), bằng hàm Setter
+        if(age<80&&age>18) {
+            this.age = age;
+        }
+        
         this.height = height; // tương tự, cần có 1 range
         this.weight = weight;   // tương tự, cần có 1 range
         this.nationality = nationality;
@@ -25,6 +30,13 @@ public class People {
     public String getName() {
         return name;
     }
+    public void setAge(int age){
+     if(age<80&&age>18) {
+            this.age = age;
+        }
+        
+    }
+    
 
     public int getAge() {
         return age;
